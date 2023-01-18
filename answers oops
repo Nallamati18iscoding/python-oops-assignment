@@ -1,12 +1,31 @@
 Q1. What is the purpose of Python's OOP?
+ans)Python OOPs Concepts. Python is an object-oriented programming language. It allows us to develop applications using Object Oriented approach. In Python, we can easily create and use classes and objects. Major principles of object-oriented programming system are given below. Object. Class. Method.
 
 Q2. Where does an inheritance search look for an attribute?
 
+ans). The term inheritance is applied because objects lower in a tree inherit attributes attached to objects higher in that tree. As the search proceeds from the bottom up, in a sense, the objects linked into a tree are the union of all the attributes defined in all their tree parents, all the way up the tree.
+
 Q3. How do you distinguish between a class object and an instance object?
 
+ans)What is an Object?
+
+Objects are the results of instantiating a class. Instantiation is the process of taking the blueprint and defining each attribute and behavior so that the resultant object actually represents a real life object. Object is a dedicated and continuous block of memory allocated to store information such as variables, methods or functions, etc. Object is created with the use of new operator, in Java programming language. For example, if there is a class called Car, then the following can be used to create an object of the Car class.
+
+new Car();
+
+Here, a Car object is created by the new operator and a reference to object is returned. The new operator along with the constructor of the Car class is used to create the new object. The life span of the object starts from the call to its constructor to the time it is destroyed. Once an object is not referred, it will be removed/ destroyed by the garbage collector.
+
+What is an Instance?
+
+Instance is a memory block, which contains the reference to an object. In other words, Instance will keep the address of the starting memory block where the object is stored. Actually, the name of the instance can be used to access the start of the object memory area. Offsets from the starting memory is calculated by the runtime engine so that we can go to where the individual data or method references are stored. Following Java code snipped can be used to create an instance of a Car object.
+
+Car myCar = new Car();
+
 Q4. What makes the first argument in a class’s method function special?
+ans)The first argument of the class method is self.
 
 Q5. What is the purpose of the init method?
+ans we can use __init__() method for initializing an object.
 
 Q6. What is the process for creating a class instance?
 
