@@ -63,22 +63,36 @@ Q22. Identify two methods for specifying actions to be executed at termination t
 whether or not an exception exists.
 
 Q23. What is the purpose of the try statement?
+ans) while writing a code we know that there might be some error that we can predict before hand,so in order to make the code run we use try statements so we can run the code .
 
 Q24. What are the two most popular try statement variations?
 
 Q25. What is the purpose of the raise statement?
+ans) Python raise Keyword is used to raise exceptions or errors. The raise keyword raises an error and stops the control flow of the program. It is used to bring up the current exception in an exception handler so that it can be handled further up the call stack.
 
 Q26. What does the assert statement do, and what other statement is it like?
+ans)Python assert Statement Python has built-in assert statement to use assertion condition in the program. assert statement has a condition or expression which is supposed to be always true. If the condition is false assert halts the program and gives an AssertionError. Syntax for using Assert in Pyhton:
 
 Q27. What is the purpose of the with/as argument, and what other statement is it like?
+ans) with statement is used in exception handling to make the code cleaner and much more readable. It simplifies the management of common resources like file streams. Observe the following code example on how the use of with statement makes code cleaner.
 
 Q28. What are *args, **kwargs?
+ans) *args are non keyvalued arguments and **kwargs are keyvalue arguments 
 
 Q29. How can I pass optional or keyword parameters from one function to another?
 
 Q30. What are Lambda Functions?
+ans) lamda functions are efficent and less time taking compared to creating  a function.
 
 Q31. Explain Inheritance in Python with an example?
+ans)One of the core concepts in object-oriented programming (OOP) languages is inheritance. It is a mechanism that allows you to create a hierarchy of classes that share a set of properties and methods by deriving a class from another class. Inheritance is the capability of one class to derive or inherit the properties from another class. 
+
+Benefits of inheritance are: 
+-It represents real-world relationships well.
+-It provides the reusability of a code. We don’t have to write the same code again and again. Also, it allows us to add more features to a class without modifying it.
+-It is transitive in nature, which means that if class B inherits from another class A, then all the subclasses of B would automatically inherit from class A.
+-Inheritance offers a simple, understandable model structure. 
+-Less development and maintenance expenses result from an inheritance. 
 
 Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
 
