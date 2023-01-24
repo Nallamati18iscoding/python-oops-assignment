@@ -28,12 +28,29 @@ Q5. What is the purpose of the init method?
 ans we can use __init__() method for initializing an object.
 
 Q6. What is the process for creating a class instance?
-
+ans "This would create first object of Employee class"
+emp1 = Employee("vsr", 2000)
+"This would create second object of Employee class"
+emp2 = Employee("ram", 5000)
 Q7. What is the process for creating a class?
+ans) class Employee:
+   'Common base class for all employees'
+   empCount = 0
+   def __init__(self, name, salary):
+      self.name = name
+      self.salary = salary
+      Employee.empCount += 1
+   def displayCount(self):
+      print "Total Employee %d" % Employee.empCount
+   def displayEmployee(self):
+      print "Name : ", self.name, ", Salary: ", self.salary
 
 Q8. How would you define the superclasses of a class?
+ans)  In object-oriented programming, a class from which other classes inherit code is called a superclass. Furthermore, the class that inherits the code is called a subclass of that superclass. Typically, a subclass inherits the instance variables and member functions of its superclass.
 
 Q9. What is the relationship between classes and modules?
+ans)  it is simply a code containing variables, functions, and classes. Modules are files present inside a package, whereas a class is used to encapsulate data and functions together inside the same unit. That wraps up the difference between python class vs module.
+
 
 Q10. How do you make instances and classes?
 
@@ -99,5 +116,7 @@ Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
 
 Q34.Explain the use of the 'nonlocal' keyword in Python.
+ans we use nonlocal keyword to explicitly instruct Python that we’re modifying a nonlocal variable. When you use the nonlocal keyword for a variable, Python will look for the variable in the enclosing local scopes chain until it first encounters the variable name.
 
 Q35. What is the global keyword?
+Global keyword is a keyword that allows a user to modify a variable outside of the current scope. It is used to create global variables from a non-global scope i.e inside a function. Global keyword is used inside a function only when we want to do assignments or when we want to change a variable.
