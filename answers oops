@@ -114,9 +114,19 @@ Benefits of inheritance are:
 Q32. Suppose class C inherits from classes A and B as class C(A,B).Classes A and B both have their own versions of method func(). If we call func() from an object of class C, which version gets invoked?
 
 Q33. Which methods/functions do we use to determine the type of instance and inheritance?
+ans) 
+class MyClass(object):
+  pass
+class MySubClass(MyClass):
+  pass
+print(isinstance(MySubClass, object))
+print(issubclass(MySubClass, MyClass))
+print(isinstance(MySubClass, MyClass))
 
 Q34.Explain the use of the 'nonlocal' keyword in Python.
 ans we use nonlocal keyword to explicitly instruct Python that we’re modifying a nonlocal variable. When you use the nonlocal keyword for a variable, Python will look for the variable in the enclosing local scopes chain until it first encounters the variable name.
 
 Q35. What is the global keyword?
-Global keyword is a keyword that allows a user to modify a variable outside of the current scope. It is used to create global variables from a non-global scope i.e inside a function. Global keyword is used inside a function only when we want to do assignments or when we want to change a variable.
+Global keyword is a keyword that allows a user to modify a variable outside of the current scope. It is used to create global variables from a non-global scope i.e inside a function. Global keyword is used inside a function only when we want to do assignments or when we want to change a variable .global keyword
+
+
